@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styleus.css"> -->
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html"> Home </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html"> About </a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand"></div>
+                    <div>IT SVOA</div>
+            </div>
+        </div> -->
+        <nav>
+            <p>
+                    <a href="https://samarbete.stockholm.se/sites/SVOA-IT-A-testyta/soporenhet1/_layouts/15/start.aspx#/SitePages/Startsida.aspx">SVOA IT-A</a>
+            </p>
+            <ul>
+                <li> <a href="https://samarbete.stockholm.se/sites/svoait/forvaltarforum/_layouts/15/start.aspx#/">Förvaltarforum</a>
+                    <ul>
+                        <li><a href="https://samarbete.stockholm.se/sites/svoait/forvaltarforum/_layouts/15/WopiFrame.aspx?sourcedoc={9D832715-720F-4255-8ED3-55B0B0C697F8}&file=Forvaltarforum&action=default&Web=1/&RootFolder=%2fsites%2fsvoait%2fforvaltarforum%2fSiteAssets%2fForvaltarforum">Anteckningar</a></li>
+                        <li><a href="https://samarbete.stockholm.se/sites/svoait/forvaltarforum/_layouts/15/start.aspx#/default.aspx">dokumentbibliotek</a>
+                    </ul>
+                </li>
+                <li> <a href="https://samarbete.stockholm.se/sites/svoait/365/_layouts/15/start.aspx#/">M365</a>
+                    <ul>
+                        <li><a href="https://samarbete.stockholm.se/sites/svoait/365/Dokument/Strategi_implementation_M365_slutrapport_.docx?d=wb981737a140749c39983b1cbff6f8066">Strategi</a></li>
+                        <li><a href="https://samarbete.stockholm.se/sites/svoait/365/_layouts/15/start.aspx#/">Rapporter</a>
+                        <li><a href="https://samarbete.stockholm.se/sites/svoait/365/_layouts/15/start.aspx#/">Implementation</a></li>
+                    </ul>
+                </li>
+                
+                <li> <a href="http://ws01563/2c8pub/#/model=f36fceef-c071-4ab4-90ca-97537c9e2cb1">IT-system</a>
+                    <ul>
+                        <li><a href="http://ws01563/2c8pub/#/model=61697626-b464-43cc-8ff4-479c44dfdc24">Kompassen</a></li>
+                        <li><a href="http://ws01563/2c8pub/#/model=f36fceef-c071-4ab4-90ca-97537c9e2cb1">Översikt</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background1">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper"> <a href="http://www.cdon.com">
+                                    <img src="images/IT-arbetsplatsen.png">
+                                </a>
+                            </div>
+                        
+                            <div class="subtitle"><a href="http://www.aws.com">
+                                IT-kartläggning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background2">
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="/images/Microsoft365.png" href="https://samarbete.stockholm.se/sites/svoait/365/_layouts/15/start.aspx#/">
+                            </div>
+
+                            <div class="subtitle">
+                            Microsoft 365  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background3"> 
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                    <img src="images/semester.png">
+                            </div>
+                            <div class="subtitle">
+                                Semesterlista
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background4">
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                    <img src="images/EA.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Anteckningar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background5">
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                    <img src="images/workplace.png">
+                            </div>
+
+                            <div class="subtitle">
+                            IT-Arbetsplats 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background6">
+
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                    <img src="images/EA.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Enterprise Architechture
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+<script> 
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+    })
+    
+</script>
+
+<style>
+
+/* Master styles */
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Nav bar */
+
+nav{
+    width:100%;
+    height: 100px;
+    background-color: #f4f4f4;
+    z-index: 1;
+}
+nav p a{
+    font-family: Arial;
+    color: #0072b6;
+    font-size:20px;
+    line-height: 20px;
+    float: left;
+    padding: 22px 20px 0px 20px;
+    text-decoration: none;
+}
+nav ul{
+	float: left;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+    position: relative;
+    
+}
+nav ul li a{
+	display: block;
+	font-family: arial;
+	color: #0072b6;
+	font-size: 14px;
+	padding: 10px 50px 0px 15px;
+	text-decoration: none;
+}
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: #f4f4f4;
+	padding: 10px;
+	border-radius: 0px 0px 8px 8px;
+}
+nav ul li:hover ul{
+	display: block;
+    text-decoration:none;
+    color: #00324d;
+	}
+
+nav ul li ul li {
+	width: 120px;
+    border-radius: 8px;
+}
+
+nav ul li ul li a{
+    padding: 15px 8px;
+    font-size: 18 px;
+    color: #00324d;
+}
+
+nav ul li:hover{
+    color: #00324d;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover{
+	background-color: #d7e1e1;
+	border-radius: 4px;
+}
+
+.container{
+    display: grid;
+
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: #bf6600;
+
+       /* add flexbox style */
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+       
+}
+
+.portfolio-item-wrapper{
+    width: 33.3%;
+    height: 350px;
+    background: yellow;
+    box-sizing: border-box;
+}
+
+.portfolio-img-background{
+    height:350px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-img-background1{
+    height:350px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #00324d;
+    
+}
+.portfolio-img-background2{
+    height:350px;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #33846e;
+    
+}
+.portfolio-img-background3{
+    height:350px;
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#008bb2;
+    
+}
+
+.portfolio-img-background4{
+    height:350px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #008c64;
+    
+}
+.portfolio-img-background5{
+    height:350px;
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:#0072b6;
+    
+}
+.portfolio-img-background6{
+    height:350px;
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #b95087;
+    
+}
+
+
+.img-text-wrapper{
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /*align-content: space-around;*/
+    width:100;
+    height: 100%;
+    text-align:center;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+.img-text-wrapper .subtitle a{
+   text-decoration: none;
+   color: #f4f4f4;
+}
+
+.logo-wrapper img{
+    width:80%;
+    margin-bottom:20px;
+    filter: invert(1);
+}
+
+.logo-wrapper img:hover{
+    filter:invert(2);
+}
+
+/*needs to be more specific with selector */
+.img-text-wrapper .subtitle{
+    /*transition: 0.5s;*/
+    font-weight:1200;
+    font-size: larger;
+    color:white;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight:1200;
+    color: #f4f4f4;
+}
+.img-text-wrapper:hover .logo-wrapper{
+    text-decoration: none;   
+}
+
+.img-darken{
+        /* transition: 0.5s; */
+        filter:brightness(10%);
+}
+
+/* add responsive media quaries */
+
+@media screen and (max-width: 760px){
+    .portfolio-item-wrapper{
+        width: 40%;
+    }
+}
+
+ @media screen and (max-width: 500px){
+    .portfolio-item-wrapper{
+        width: 100%;
+    }
+    .nav p{
+        font-size: 10px;
+    }
+}
+
+
+
+</style>
+</html>
