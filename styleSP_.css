@@ -207,7 +207,7 @@ background-color: #00324d;
         filter:brightness(10%);
 }
 
-@media screen and (max-width: 501px) and (min-width: 360px){
+@media screen and (max-width: 602px) and (min-width: 360px){
     .portfolio-items-wrapper {
         /*display: grid;
         grid-template-columns: 1fr 1fr; */
@@ -238,7 +238,7 @@ background-color: #00324d;
     }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 502px){
+@media only screen and (max-width: 1000px) and (min-width: 602px){
     .portfolio-items-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -258,7 +258,7 @@ background-color: #00324d;
     .portfolio-items-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    width: 100%;
    /* display: flex;
     flex-direction: column;
     flex-wrap: wrap; */
